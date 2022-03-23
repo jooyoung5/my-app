@@ -2,7 +2,6 @@ import { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 
 function Movie({movie}) {
-    console.log("moviesss");
     return (
         <div>
             <img src={movie.medium_cover_image} alt={movie.title}/>                
