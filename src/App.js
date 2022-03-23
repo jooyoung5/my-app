@@ -7,9 +7,9 @@ function App() {
   // App에서 컴포넌트를 보여주는게 아니라 router를 보여줌
   // url에 따른 
   return (
-  <Router>
+  <Router basename={process.env.PUBLIC_URL}>
     <Routes>
-      <Route path={process.env.PUBLIC_URL + "/"} element={<Home/>} />
+      <Route path={"/"} element={<Home/>} />
       <Route path={"/movie/:id"} element={<Detail/>} />
     </Routes>
   </Router>);
